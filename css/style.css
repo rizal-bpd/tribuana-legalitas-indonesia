@@ -1,6 +1,6 @@
 :root {
   --primary: #ec9e37;
-  --bg: #010101;
+  --bg: #d3d3d3;
 }
 
 * {
@@ -86,7 +86,7 @@ html {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  background-image: url("../img/hero.jpg");
+  background-image: url("../img/hero1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -103,8 +103,8 @@ html {
   bottom: 0;
   background: linear-gradient(
     0deg,
-    rgba(1, 1, 3, 1) 8%,
-    rgba(255, 255, 255, 0) 50%
+    rgb(211, 211, 211) 8%,
+    rgba(255, 255, 255, 0) 20%
   );
 }
 
@@ -158,6 +158,7 @@ html {
   text-align: center;
   font-size: 2.6rem;
   margin-bottom: 3rem;
+  color: #010101;
 }
 
 .about h2 span,
@@ -203,9 +204,10 @@ html {
 .about .row .content p {
   margin-bottom: 0.8rem;
   font-size: 1.4rem;
-  font-weight: 300;
+  font-weight: 500;
   line-height: 1.6rem;
   text-align: justify;
+  color: #010101;
 }
 
 /* produk section */
@@ -219,9 +221,10 @@ html {
   text-align: center;
   max-width: 30rem;
   margin: auto;
-  font-weight: bold;
+  font-weight: 500;
   line-height: 1.6rem;
-  font-size: 1.4rem;
+  font-size: 2rem;
+  color: #010101;
 }
 
 .produk .row {
@@ -241,6 +244,7 @@ html {
   transition: transform 0.3s ease;
   margin-left: 1rem;
   position: relative;
+  margin-bottom: 1rem;
 }
 
 .produk .row .card:hover {
@@ -451,10 +455,11 @@ footer .credit a {
   }
 
   .about .row .about-img img {
-    height: 50rem;
+    height: 40rem;
     width: 100%;
     object-fit: cover;
     object-position: center;
+    margin-left: 5rem;
   }
 
   .about .row .content {
