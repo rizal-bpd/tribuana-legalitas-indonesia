@@ -150,8 +150,8 @@ html {
   bottom: 150px; /* Jarak dari bagian bawah */
   right: 20px; /* Jarak dari sisi kanan */
   z-index: 1000;
-  width: 4%;
-  height: 8%;
+  width: 5%;
+  height: 9%;
 }
 
 .hero .whatsapp-logo .whatsapp-icon {
