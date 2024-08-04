@@ -145,6 +145,50 @@ html {
   box-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
 }
 
+.hero .whatsapp-logo {
+  position: fixed; /* Logo akan tetap di posisi yang sama meskipun halaman digulir */
+  bottom: 150px; /* Jarak dari bagian bawah */
+  right: 20px; /* Jarak dari sisi kanan */
+  z-index: 1000;
+  width: 5%;
+  height: 9%;
+}
+
+.hero .whatsapp-logo .whatsapp-icon {
+  background-color: #25d366; /* Warna hijau WhatsApp */
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.hero .whatsapp-logo .instagram-icon {
+  background-color: #e1306c; /* Warna hijau WhatsApp */
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.hero .whatsapp-logo .facebook-icon {
+  background-color: #1877f2; /* Warna hijau WhatsApp */
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* about section */
 .about,
 .produk,
@@ -316,13 +360,17 @@ html {
 .contact .row {
   display: flex;
   margin-top: 2rem;
-  background-color: #222;
+  width: 100vh; /* Lebar penuh viewport */
+  height: 100vh; /* Tinggi penuh viewport */
+  overflow: hidden;
+  margin-left: 23rem;
 }
 
 .contact .row .map {
-  flex: 1 1 45rem;
-  width: 100%;
-  object-fit: cover;
+  flex: 1 1 30rem;
+  width: 75%;
+  height: 75%;
+  border: none;
 }
 
 .contact .row form {
