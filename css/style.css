@@ -363,11 +363,11 @@ html {
   width: 100vh; /* Lebar penuh viewport */
   height: 100vh; /* Tinggi penuh viewport */
   overflow: hidden;
-  margin-left: 23rem;
+  margin-left: 14rem;
 }
 
 .contact .row .map {
-  flex: 1 1 30rem;
+  flex: 1 1 40rem;
   width: 75%;
   height: 75%;
   border: none;
@@ -541,6 +541,10 @@ footer .credit a {
 
   .produk .cta {
     margin-left: 13rem;
+  }
+
+  .contact .row .map {
+    margin-left: -100rem;
   }
 }
 
