@@ -145,48 +145,47 @@ html {
   box-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
 }
 
-.hero .whatsapp-logo {
+.hero .socials-logo {
+  display: flex;
   position: fixed; /* Logo akan tetap di posisi yang sama meskipun halaman digulir */
   bottom: 150px; /* Jarak dari bagian bawah */
-  right: 20px; /* Jarak dari sisi kanan */
+  right: 30px; /* Jarak dari sisi kanan */
   z-index: 1000;
-  width: 5%;
-  height: 9%;
+  width: 4%;
+  height: 8%;
+  gap: 10px;
+  flex-wrap: wrap;
 }
 
-.hero .whatsapp-logo .whatsapp-icon {
-  background-color: #25d366; /* Warna hijau WhatsApp */
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  position: relative;
+.hero .socials-logo .icon {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+  transition: color 0.3s, transform 0.3s;
+  width: 60px;
+  height: 60px;
   display: flex;
-  justify-content: center;
   align-items: center;
-  margin-bottom: 10px;
+  justify-content: center;
+  border-radius: 50%;
 }
 
-.hero .whatsapp-logo .instagram-icon {
-  background-color: #e1306c; /* Warna hijau WhatsApp */
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 10px;
+.hero .socials-logo .icon:hover {
+  color: #fff;
+  transform: scale(1.1);
 }
 
-.hero .whatsapp-logo .facebook-icon {
-  background-color: #000; /* Warna hijau WhatsApp */
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.hero .socials-logo .whatsapp {
+  background-color: #25d366;
+}
+
+.hero .socials-logo .instagram {
+  background-color: #e4405f;
+}
+
+.hero .socials-logo .tiktok {
+  background-color: #000;
 }
 
 /* about section */
@@ -358,19 +357,20 @@ html {
 
 /* contact session */
 .contact .row {
-  display: flex;
-  margin-top: 2rem;
-  width: 100vh; /* Lebar penuh viewport */
-  height: 100vh; /* Tinggi penuh viewport */
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+  height: 0;
   overflow: hidden;
-  margin-left: 14rem;
+  max-width: 100%;
+  background: #eee;
 }
 
 .contact .row .map {
-  flex: 1 1 40rem;
-  width: 75%;
-  height: 75%;
-  border: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .contact .row form {
@@ -452,16 +452,16 @@ footer .credit a {
 /* media queries */
 
 /* laptop */
-@media (max-width: 1366px) {
+@media (max-width: 1025px) {
   html {
-    font-size: 75%;
+    font-size: 60%;
   }
 }
 
 /* tablet */
-@media (max-width: 758px) {
+@media (max-width: 601px) and (max-width: 1024px) {
   html {
-    font-size: 62.5%;
+    font-size: 50%;
   }
 
   #menu {
@@ -527,14 +527,6 @@ footer .credit a {
     margin-bottom: 1rem;
   }
 
-  .contact .row {
-    flex-wrap: wrap;
-  }
-
-  .contact .row .map {
-    height: 30rem;
-  }
-
   .contact .row form {
     padding-top: 0;
   }
@@ -542,15 +534,17 @@ footer .credit a {
   .produk .cta {
     margin-left: 13rem;
   }
-
-  .contact .row .map {
-    margin-left: -100rem;
-  }
 }
 
 /* Mobile phone */
-@media (max-width: 450px) {
+@media (max-width: 600px) {
   html {
     font-size: 55%;
+  }
+
+  .hero .socials-logo .icon {
+    font-size: 15px;
+    width: 50px;
+    height: 45px;
   }
 }
