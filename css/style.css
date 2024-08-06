@@ -29,7 +29,7 @@ html {
   align-items: center;
   padding: 1.4rem 7%;
   background-color: rgba(1, 1, 1, 0.8);
-  /* border-bottom: 1px solid var(--primary); */
+  border-bottom: 1px solid var(--primary);
   position: fixed;
   top: 0;
   left: 0;
@@ -83,56 +83,17 @@ html {
 
 /* hero section */
 .hero {
+  min-height: 100vh;
   display: flex;
-  justify-content: center;
   align-items: center;
-  margin-top: 5.5rem;
-}
-
-.carousel {
+  background-image: url("../img/hero1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   position: relative;
-  width: 1495px;
-  height: 600px;
-  overflow: hidden;
 }
 
-.carousel-images {
-  display: flex;
-  transition: transform 3s ease-in-out;
-}
-
-.carousel-item {
-  min-width: 100%;
-  height: 600px;
-  box-sizing: border-box;
-}
-
-.carousel-item img {
-  width: 100%;
-  display: block;
-}
-
-/* Animation */
-@keyframes slide {
-  0% {
-    transform: translateX(0);
-  }
-  33.33% {
-    transform: translateX(-100%);
-  }
-  66.66% {
-    transform: translateX(-200%);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
-
-.carousel-images {
-  animation: slide 15s infinite;
-}
-
-/* .hero::after {
+.hero::after {
   content: "";
   display: block;
   position: absolute;
@@ -144,7 +105,7 @@ html {
     rgb(211, 211, 211) 8%,
     rgba(255, 255, 255, 0) 20%
   );
-} */
+}
 
 .hero .content {
   padding: 1.4rem 7%;
@@ -583,21 +544,5 @@ footer .credit a {
     font-size: 15px;
     width: 50px;
     height: 45px;
-  }
-
-  .carousel {
-    position: relative;
-    width: 1495px;
-    overflow: hidden;
-  }
-
-  .carousel-item {
-    min-height: 100%;
-    box-sizing: border-box;
-  }
-
-  .carousel-item img {
-    height: 100%;
-    display: block;
   }
 }
