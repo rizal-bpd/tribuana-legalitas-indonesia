@@ -83,17 +83,57 @@ html {
 
 /* hero section */
 .hero {
-  min-height: 100vh;
+  /* min-height: 90vh; */
   display: flex;
   align-items: center;
-  background-image: url("../img/hero1.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  position: relative;
+  height: 120vh;
 }
 
-.hero::after {
+.carousel {
+  position: relative;
+  width: 1497px;
+  overflow: hidden;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.carousel-images {
+  display: flex;
+  transition: transform 1s ease-in-out;
+}
+
+.carousel-item {
+  min-width: 100%;
+  box-sizing: border-box;
+}
+
+.carousel-item img {
+  width: 100%;
+  display: block;
+}
+
+.carousel-prev,
+.carousel-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.carousel-prev {
+  left: 10px;
+}
+
+.carousel-next {
+  right: 10px;
+}
+
+/* .hero::after {
   content: "";
   display: block;
   position: absolute;
@@ -105,7 +145,7 @@ html {
     rgb(211, 211, 211) 8%,
     rgba(255, 255, 255, 0) 20%
   );
-}
+} */
 
 .hero .content {
   padding: 1.4rem 7%;
@@ -544,5 +584,16 @@ footer .credit a {
     font-size: 15px;
     width: 50px;
     height: 45px;
+  }
+
+  .carousel-item {
+    min-height: 100%;
+    box-sizing: border-box;
+  }
+
+  .carousel-item img {
+    height: 660px;
+    width: 660px;
+    display: block;
   }
 }
