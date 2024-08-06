@@ -106,12 +106,16 @@ html {
 .carousel-item {
   min-width: 100%;
   box-sizing: border-box;
+  display: flex; /* Menyusun gambar di tengah */
+  justify-content: center; /* Menyusun gambar di tengah horizontal */
+  align-items: center; /* Menyusun gambar di tengah vertical */
 }
 
 .carousel-item img {
-  width: 100%;
-  height: auto;
+  max-width: 100%; /* Menyesuaikan lebar gambar */
+  height: auto; /* Menjaga aspek rasio gambar */
   display: block;
+  margin: auto; /* Menghindari jarak tidak diinginkan di sekitar gambar */
 }
 
 .carousel-prev,
