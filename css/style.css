@@ -112,21 +112,21 @@ html {
   max-width: 60rem;
 }
 
-/* .hero .content h1 {
+.hero .content h1 {
   font-size: 3em;
   color: var(--primary);
   text-shadow: 1px 1px 3px rgba(1, 1, 1, 0.5);
   line-height: 1.2;
   font-weight: bold;
-} */
+}
 
-/* .hero .content p {
+.hero .content p {
   font-size: 1.4rem;
   margin-top: 1rem;
   line-height: 1.4rem;
   color: var(--primary);
   font-weight: bold;
-} */
+}
 
 .hero .content p span {
   color: #010101;
