@@ -85,13 +85,14 @@ html {
 .hero {
   /* min-height: 90vh; */
   display: flex;
+  justify-content: center;
   align-items: center;
   height: 120vh;
 }
 
 .carousel {
   position: relative;
-  width: 1497px;
+  width: 100%;
   overflow: hidden;
   border: 1px solid #ddd;
   border-radius: 8px;
@@ -109,6 +110,7 @@ html {
 
 .carousel-item img {
   width: 100%;
+  height: auto;
   display: block;
 }
 
@@ -592,8 +594,13 @@ footer .credit a {
   }
 
   .carousel-item img {
-    height: 660px;
+    height: 900px;
     width: 660px;
     display: block;
+  }
+
+  .carousel-prev,
+  .carousel-next {
+    padding: 8px;
   }
 }
