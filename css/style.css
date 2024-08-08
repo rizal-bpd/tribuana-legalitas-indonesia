@@ -316,10 +316,18 @@ html {
 
 .produk .row {
   display: flex;
-  flex-wrap: wrap;
-  margin-top: 5rem;
+  /* flex-wrap: wrap; */
+  margin-top: 1rem;
   justify-content: center;
+  align-items: center;
   margin-bottom: 5rem;
+}
+
+.produk .row img {
+  max-width: 100%; /* Memastikan gambar tidak melebihi lebar container */
+  max-height: 100%; /* Memastikan gambar tidak melebihi tinggi container */
+  vertical-align: middle;
+  padding: 0 1rem;
 }
 
 .produk .row .card {
@@ -606,5 +614,13 @@ footer .credit a {
   .carousel-prev,
   .carousel-next {
     padding: 8px;
+  }
+
+  .produk .row {
+    flex-wrap: wrap;
+  }
+
+  .produk .row img {
+    padding: 1rem 0;
   }
 }
